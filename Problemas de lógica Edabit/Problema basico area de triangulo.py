@@ -82,7 +82,25 @@ def calculator(num1, operator, num2):
     elif operator == "*":
         owo = num1*num2
     return owo
-print("owo")
+num1=1
+num2=2
+operator=input(str("ingresa lal"))
+owo= calculator(num1, operator, num2)
+print(owo)
+
+
+#------------------------------------------------------
+from math import pi
+import math
+
+def radians_to_degrees(rad):
+    result= rad * (180/pi)
+    result = round(result,1)
+    return result
+radial = 60
+
+resultado= radians_to_degrees(radial)
+print(resultado)
 
 
 #------------------------------------------------------
