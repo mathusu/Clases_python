@@ -59,5 +59,30 @@ precio_final = round(precio_final)
 print(precio_final)
 
 
+#------------------------------------------------------
+def circuit_power(voltage, current):
+	power= current * voltage
+	return power
+voltage = 40
+current = 10
+power = circuit_power(voltage, current)
+print(power)
+
+
+#------------------------------------------------------
+def calculator(num1, operator, num2):
+    if operator == "+":
+        owo = num1+num2
+    elif operator == "-":
+        owo = num1-num2
+    elif num2 == 0:
+        print("Can't divide by 0!")
+    elif operator == "/":
+        owo = num1/num2
+    elif operator == "*":
+        owo = num1*num2
+    return owo
+print("owo")
+
 
 #------------------------------------------------------
