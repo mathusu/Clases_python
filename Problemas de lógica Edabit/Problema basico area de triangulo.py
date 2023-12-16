@@ -98,7 +98,6 @@ def radians_to_degrees(rad):
     result = round(result,1)
     return result
 radial = 60
-
 resultado= radians_to_degrees(radial)
 print(resultado)
 
