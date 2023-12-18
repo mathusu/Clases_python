@@ -71,19 +71,24 @@ print(power)
 
 #------------------------------------------------------
 def calculator(num1, operator, num2):
-    if operator == "+":
-        owo = num1+num2
+    if operator == "/" and num2== 0:
+        owo = "Can't divide by 0!"
+
     elif operator == "-":
         owo = num1-num2
-    elif num2 == 0:
-        print("Can't divide by 0!")
+
     elif operator == "/":
         owo = num1/num2
+
+    elif operator == "+":
+        owo = num1+ num2
+
     elif operator == "*":
         owo = num1*num2
     return owo
+
 num1=1
-num2=2
+num2=0
 operator=input(str("ingresa lal"))
 owo= calculator(num1, operator, num2)
 print(owo)
@@ -100,6 +105,20 @@ def radians_to_degrees(rad):
 radial = 60
 resultado= radians_to_degrees(radial)
 print(resultado)
+
+
+#------------------------------------------------------
+def dac_output(decimal_value):
+    if 0 <= decimal_value <= 1023:
+        analog_voltage = (decimal_value / 1023) * 5.00
+        analog_voltage = round(analog_voltage, 2)
+        return analog_voltage
+    else:
+        print("Error: Input value should be in the range 0-1023.")
+
+decimal_value = 400
+resulting_voltage = dac_output(decimal_value)
+print(f"The analog voltage for the decimal value {decimal_value} is {resulting_voltage:.2f} volts.")
 
 
 #------------------------------------------------------
